@@ -74,6 +74,7 @@ button {
     border-radius: 40px;
     border: none;
     font-size: 1rem;
+    box-shadow: 0 5px 5px hsl(var(--hsl-pink), 0.2);
 }
 
 .btn-icon {
@@ -91,7 +92,6 @@ button {
     border: 1px solid;
     padding: 0.5rem 1rem;
     background-color: var(--pale-blue);
-    box-shadow: 0 8px 16px 0 hsl(var(--hsl-pink), 0.2);
 }
 
 .btn-inverse:hover {
@@ -102,7 +102,6 @@ button {
     color: var(--pale-blue);
     padding: 1rem 3rem;
     background-color: var(--pink);
-    box-shadow: 0 8px 16px 0 hsl(var(--hsl-pink), 0.2);
 }
 
 .btn-large:hover {
@@ -113,7 +112,7 @@ button {
     color: var(--pale-blue);
     padding: 1rem 3rem;
     background-color: var(--pink);
-    box-shadow: 0 8px 16px 0 hsl(var(--hsl-pink), 0.2);
+    box-shadow: none;
     border-radius: 5px;
 }
 
@@ -360,6 +359,7 @@ footer .text-box {
 
     .email-form {
         flex-direction: row;
+        align-items: center;
     }
 
     .email-form input {
