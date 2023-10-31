@@ -1,0 +1,396 @@
+:root {
+    --width: 96%;
+    --gutter: 4%;
+    --hsl-pink: 322, 100%, 66%;
+    --pink: hsl(var(--hsl-pink));
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --pale-blue: hsl(207, 100%, 98%);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-size: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-1-of-2 {
+    flex: 100%;
+}
+
+.col-1-of-2 + .col-1-of-2 {
+    margin-top: 5rem;
+}
+
+.col-2-of-2 {
+    flex: 100%;
+}
+
+body,
+button {
+    color: var(--dark-cyan);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.header-logo {
+    width: 50%;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 40px;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-icon {
+    background-color: unset;
+    border: none;
+    color: white;
+    padding: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.btn-inverse {
+    color: var(--pink);
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    background-color: var(--pale-blue);
+    box-shadow: 0 8px 16px 0 hsl(var(--hsl-pink), 0.2);
+}
+
+.btn-inverse:hover {
+    color: var(--light-pink);
+}
+
+.btn-large {
+    color: var(--pale-blue);
+    padding: 1rem 3rem;
+    background-color: var(--pink);
+    box-shadow: 0 8px 16px 0 hsl(var(--hsl-pink), 0.2);
+}
+
+.btn-large:hover {
+    background-color: var(--light-pink);
+}
+
+.btn-squared {
+    color: var(--pale-blue);
+    padding: 1rem 3rem;
+    background-color: var(--pink);
+    box-shadow: 0 8px 16px 0 hsl(var(--hsl-pink), 0.2);
+    border-radius: 5px;
+}
+
+.btn-squared:hover {
+    background-color: var(--light-pink);
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta-box {
+    margin: 0 1rem;
+}
+
+.cta .heading {
+    font-size: 1.5rem;
+}
+
+.cta .btn-container {
+    margin: 3rem auto;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.data {
+    margin-top: 2rem;
+}
+
+.data-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.data-copy {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.data-copy .heading {
+    font-size: 4rem;
+}
+
+.m-top_large {
+    margin-top: 10rem;
+}
+
+.m-top_medium {
+    margin-top: 5rem;
+}
+
+.m-top_small {
+    margin-top: 1.5rem;
+}
+
+.bg-middle {
+    background-color: var(--pale-blue);
+    padding: 5rem 0;
+}
+
+.bg-img {
+    background-size: 100% 100%;
+}
+
+.row-reverse_small {
+    flex-direction: column-reverse;
+}
+
+.row-reverse_small > .col-1-of-2 {
+    margin-top: 5rem;
+}
+
+.row-reverse_small .col-1-of-2 + .col-1-of-2 {
+    margin-top: 0;
+}
+
+.grow-top {
+    background-image: url('images/bg-section-top-mobile-1.svg');
+    height: 112px;
+}
+
+.grow-bottom {
+    background-image: url('images/bg-section-bottom-mobile-1.svg');
+    height: 52px;
+}
+
+.users-top {
+    background-image: url('images/bg-section-top-mobile-2.svg');
+    height: 103px;
+}
+
+.users-bottom {
+    background-image: url('images/bg-section-bottom-mobile-2.svg');
+    height: 101px;
+}
+
+.footer-top {
+    background-image: url('images/bg-footer-top-mobile.svg');
+    height: 53px;
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.text-box .heading {
+    font-size: 2.5rem;
+}
+
+footer {
+    color: white;
+}
+
+footer .text-box {
+    text-align: left;
+}
+
+.footer-middle {
+    background-color: var(--dark-cyan);
+    padding: 3rem 0 6rem;
+}
+
+.footer-logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 1.5rem;
+}
+
+.phone-email {
+    display: flex;
+}
+
+.phone-email p {
+    margin-left: 1rem;
+}
+
+.newsletter.col-1-of-2 {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.newsletter h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.email-form {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: end;
+}
+
+.email-form input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.email-form .btn-container {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+@media only screen and (min-width: 720px) {
+    .main {
+        font-size: 1.1rem;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .row-reverse_small > .col-1-of-2 {
+        margin-top: 0;
+    }
+
+    .col-1-of-2 {
+        flex: 50%;
+    }
+
+    .col-1-of-2 + .col-1-of-2 {
+        margin-top: 0;
+    }
+
+    .header {
+        margin: 5rem auto;
+    }
+
+    .header-logo {
+        width: 100%;
+    }
+
+    .btn-inverse {
+        padding: 0.5rem 2rem;
+    }
+
+    .btn-large {
+        padding: 1.5rem 6rem;
+    }
+
+    .cta .heading {
+        font-size: 3rem;
+    }
+
+    .cta p {
+        margin: 0 4rem;
+    }
+
+    .cta-box {
+        margin: 0 3rem;
+    }
+
+    .text-box {
+        text-align: left;
+        max-width: 60%;
+        padding: 0 4rem;
+    }
+
+    .data-copy .heading {
+        font-size: 5rem;
+    }
+
+    .footer-middle {
+        padding: 6rem 0;
+    }
+
+    .email-form {
+        flex-direction: row;
+    }
+
+    .email-form input {
+        width: 20rem;
+    }
+
+    .email-form .btn-container {
+        margin-top: 0;
+    }
+
+    .grow-top {
+        background-image: url('images/bg-section-top-desktop-1.svg');
+        height: 165px;
+    }
+
+    .grow-bottom {
+        background-image: url('images/bg-section-bottom-desktop-1.svg');
+        height: 139px;
+    }
+
+    .users-top {
+        background-image: url('images/bg-section-top-desktop-2.svg');
+        height: 156px;
+    }
+
+    .users-bottom {
+        background-image: url('images/bg-section-bottom-desktop-2.svg');
+        height: 139px;
+    }
+
+    .footer-top {
+        background-image: url('images/bg-footer-top-desktop.svg');
+        height: 158px;
+    }
+}
