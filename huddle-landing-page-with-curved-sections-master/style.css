@@ -1,6 +1,4 @@
 :root {
-    --width: 96%;
-    --gutter: 4%;
     --hsl-pink: 322, 100%, 66%;
     --pink: hsl(var(--hsl-pink));
     --light-pink: hsl(321, 100%, 78%);
