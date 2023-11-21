@@ -123,6 +123,10 @@ button {
     font-weight: 700;
 }
 
+.hero {
+    margin-top: 6rem;
+}
+
 .cta {
     text-align: center;
 }
@@ -275,7 +279,7 @@ footer .text-box {
 
 .email-form {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
     flex-direction: column;
     align-items: end;
 }
@@ -284,12 +288,18 @@ footer .text-box {
     width: 100%;
     height: 3rem;
     border-radius: 5px;
-    border: none;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .email-form .btn-container {
     margin-top: 1rem;
-    margin-left: 2rem;
 }
 
 @media only screen and (min-width: 720px) {
@@ -329,6 +339,10 @@ footer .text-box {
         padding: 1.5rem 6rem;
     }
 
+    .hero {
+        margin-top: 12rem;
+    }
+
     .cta .heading {
         font-size: 3rem;
     }
@@ -358,10 +372,12 @@ footer .text-box {
     .email-form {
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .email-form input {
         width: 20rem;
+        margin: 1rem 2rem 1rem 0;
     }
 
     .email-form .btn-container {
